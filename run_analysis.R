@@ -1,5 +1,5 @@
-# Load in raw files of training and test data and values for 531 
-#observation features 30 subjects and 6 activities
+# Load in raw files of training and test data and values for 531 features, 30 subjects and 6 activities
+#There are 2,947 test measurements and 7,352 train measurements totaling 10,299 combined measures.
 
 #These files must be downloaded from UCI website 
 # https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
