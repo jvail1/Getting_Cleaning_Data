@@ -79,7 +79,7 @@ x_test <- full_join(x_test, activity_labels, by="activity")
 
 train_test <- rbind(x_train, x_test)
 #create index of columns to keep mean, std, subject and 
-#activity codes and lables in x_train and x_test column names
+#activity codes and labels in x_train and x_test column names
 
 keep<- grep("mean|std|subject|activity", names(train_test))
 
