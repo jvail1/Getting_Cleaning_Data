@@ -24,14 +24,14 @@ The dplyr package is required for data manipulation througout the script.
 3) The features variables are loaded in from Features.txt.  These are equivalent to the 561 columns in both 
 x_train and x_test and will be joined to those tables to provide descriptive labels.
 
-4) The full set of oberservations for the train and test data are loaded into separate tables for now with 
+4) The full set of observations for the train and test data are loaded into separate tables for now with 
 missing values set to a string value of NA.
 
 5) The column names in both train and test are renamed using the row values of the Features table as they are 
-positioned from 1-561 and are equivalent to the column positions train and test. Parameters are set in the 
+positioned from 1-561 and are equivalent to the columns in train and test. Parameters are set in the 
 make.names function to enforce unique names and underscoring.
 
-6) The test subjects are loaded in from subject_train.txt and subject_test.txt.  There are 30 subjects in total.
+6) The test subjects are loaded in from subject_train.txt and subject_test.txt.  There are 30 unique subjects in total.
 The column in this table is renamed to 'subject' and appended using cbind to the subject_train and subject_test data.
 
 7) The subjects are then appended to the main train and test tables also using cbind.
