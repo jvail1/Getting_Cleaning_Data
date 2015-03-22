@@ -13,10 +13,10 @@ A video of the experiment is also included here: http://www.youtube.com/watch?v=
 
 The files can be downloaded from: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 and placed in the local R working directory.  Only the x_test, x_train, y_test, y_train, features, activity_labels,
-subject_train and subject_test files were loaded into R.  The files contained in the Inertial folders were determined
+subject_train and subject_test files are loaded into R.  The files contained in the Inertial folders were determined
 to be surplus to the requirements of the assignment.
 
-The dplyr package was required for data manipulation througout the script.
+The dplyr package is required for data manipulation througout the script.
 1) Load lookup values for activities from activity_labels.txt          
 
 2) The column names in activity_labels are renamed to activity and activity_labels. 
@@ -41,7 +41,7 @@ the column name is renamed to 'activity'.
 
 9) The train and test table rows are then combined using rbind to create a combined table of all of the observations
 for both train and test data.  This data now has descriptively named columns for the apropriate subject, activity code 
-and label.
+and activity label.
 
 10) An index is now created using the grep function looking for the positions of columns that contain measures for mean 
 or standrard deviation.  The positions for the subject, activity and activity label columns are also returned in order 
