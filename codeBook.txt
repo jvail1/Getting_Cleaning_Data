@@ -3,8 +3,8 @@
 The main train and test data files contain the full set of measures of the subjects and activity for 
 the Samsung phone accelrometer and gyroscope human activity recognition project referenced in full detail below.
 In summary, 30 subjects were given Samsung phones outfitted with accelerometers and gyroscopes that took various
-measurements while they performed 6 activities of walking, sitting, walking upstairs, walking downstairs and laying down.
-The details of the experiment are detailed thoroughly here, 
+measurements while they performed 6 activities of walking, sitting, standing, walking upstairs, walking downstairs and 
+laying down.  The details of the experiment are detailed thoroughly here, 
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 and in the readme.txt file included in the data files.  The contents of this file have been included at the bottom of 
 this code book, which describes each step of the work done with the downloaded data in the run_analysis.R script.
