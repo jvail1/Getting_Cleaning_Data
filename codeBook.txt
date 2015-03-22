@@ -9,6 +9,8 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 and in the readme.txt file included in the data files.  The contents of this file have been included at the bottom of 
 this code book, which describes each step of the work done with the downloaded data in the run_analysis.R script.
 
+A video of the experiment is also included here: http://www.youtube.com/watch?v=XOEN9W05_4A
+
 The files can be downloaded from: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 and placed in the local R working directory.  Only the x_test, x_train, y_test, y_train, features, activity_labels,
 subject_train and subject_test files were loaded into R.  The files contained in the Inertial folders were determined
