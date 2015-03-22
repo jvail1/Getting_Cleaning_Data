@@ -1,4 +1,5 @@
-The main train and test data files contain the full set of measures of the subjects and activity for the Samsung accelrometer and gyroscope human activity recognition project referenced in full detail below.
+The main train and test data files contain the full set of measures of the subjects and activity for 
+the Samsung accelrometer and gyroscope human activity recognition project referenced in full detail below.
 
 
 
