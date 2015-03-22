@@ -1,7 +1,60 @@
 The main train and test data files contain the full set of measures of the subjects and activity for 
-the Samsung accelrometer and gyroscope human activity recognition project referenced in full detail below.
+the Samsung phone accelrometer and gyroscope human activity recognition project referenced in full detail below.
+In summary, 30 subjects were given Samsung phones outfitted with accelerometers and gyroscopes that took various
+measurements while they performed 6 activities of walking, sitting, walking upstairs, walking downstairs and laying down.
+The details of the measurements are detailed thoroughly here: 
 
 
+
+The files can be downloaded from: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+and placed in the local R working directory.  Only the x_test, x_train, y_test, y_train, features, activity_labels,
+subject_train and subject_test files were loaded into R.  The files contained in the Inertial folders were determined
+to be surplus to the requirements of the assignment.
+
+The dplyr package was required for data manipulation througout the script.
+1) Load lookup values for activities from activity_labels.txt          
+
+2) The column names in activity_labels are renamed to activity and activity_labels. 
+
+3) The features variables are loaded in from Features.txt.  These are equivalent to the 561 columns in both 
+x_train and x_test and will be joined to those tables to provide descriptive labels.
+
+4) The full set of oberservations for the train and test data are loaded into separate tables for now with 
+missing values set to a string value of NA.
+
+5) The column names in both train and test are renamed using the row values of the Features table as they are 
+positioned from 1-561 and are equivalent to the column positions train and test. Parameters are set in the 
+make.names function to enforce unique names and underscoring.
+
+6) The test subjects are loaded in from subject_train.txt and subject_test.txt.  There are 30 subjects in total.
+The column in this table is renamed to 'subject' and appended using cbind to the subject_train and subject_test data.
+
+7) The subjects are then appended to the main train and test tables also using cbind.
+
+8) The activities are then loaded and joined using the full_join function to the main train and test tables after 
+the column name is renamed to 'activity'.  
+
+9) The train and test table rows are then combined using rbind to create a combined table of all of the observations
+for both train and test data.  This data now has descriptively named columns for the apropriate subject, activity code 
+and label.
+
+10) An index is now created using the grep function looking for the positions of columns that contain measures for mean 
+or standrard deviation.  The positions for the subject, activity and activity label columns are also returned in order 
+to maintain them in the final table.
+
+11) The columns returned are then used to subset the train/test table to include only the mean, std, subject and 
+activity columns.
+
+12) The mean for each grouping of activity and subject is then calculated.  This yields a total of 180 summary rows, 
+for 30 subjects and 6 activities each.  There are 82 columns and 180 rows in the resulting tidy data.
+
+13) A tidy data text file is then written out using the write.table function with row.names=FALSE in order to remove an 
+additional blank column being inserted into the data.
+
+14) This file can be read back into R using read.table with header=TRUE yielding a table of 180 rows and 82 
+columns.
+
+Below is the original README.txt that was downloaded with the data.
 
 ==================================================================
 Human Activity Recognition Using Smartphones Dataset
