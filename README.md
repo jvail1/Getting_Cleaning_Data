@@ -1,4 +1,4 @@
-# Getting_Cleaning_Data Course Project Assignment
+# Getting Cleaning Data Course Project Assignment
 
 This repository contains a run_analysis.R script that works on files downloaded from the UCI HAR Dataset zip file, https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip .  
 These files should be downloaded and placed in the local R working directory.
