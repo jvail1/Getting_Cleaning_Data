@@ -29,7 +29,7 @@ missing values set to a string value of NA.
 
 5) The column names in both train and test are renamed using the row values of the Features table as they are 
 positioned from 1-561 and are equivalent to the columns in train and test. Parameters are set in the 
-make.names function to enforce unique names and underscoring.
+make.names function to enforce unique names and allow for calumn name underscoring.
 
 6) The test subjects are loaded in from subject_train.txt and subject_test.txt.  There are 30 unique subjects in total.
 The column in this table is renamed to 'subject' and appended using cbind to the subject_train and subject_test data.
