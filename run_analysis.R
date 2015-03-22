@@ -27,7 +27,7 @@ x_train <- read.table ("./UCI HAR Dataset/train/X_train.txt", na.strings="NA")
 
 x_test <- read.table ("./UCI HAR Dataset/test/X_test.txt", na.strings="NA")
 
-#rename columns on train and test tables using features decodes
+#rename columns on train and test tables using features decodes, enforce unique column names and allow underscores
 
 names(x_train) <- make.names(names=features[,2], unique=TRUE, allow_ = TRUE)
 
