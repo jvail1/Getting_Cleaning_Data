@@ -1,4 +1,4 @@
-#run_analysis.R Code Book - Getting and Cleaning Data Course Project
+run_analysis.R Code Book - Getting and Cleaning Data Course Project
 
 The main train and test data files contain the full set of measures of the subjects and activity for 
 the Samsung phone accelrometer and gyroscope human activity recognition project referenced in full detail below.
