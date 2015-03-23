@@ -31,7 +31,6 @@ The dplyr package is required for data manipulation througout the script.
 
 3) The features variables are loaded in from features.txt.  These are equivalent to the 561 columns in both 
 x_train and x_test and will be joined to those tables to provide descriptive labels. The values are:
-
 1 tBodyAcc-mean()-X
 2 tBodyAcc-mean()-Y
 3 tBodyAcc-mean()-Z
