@@ -1,38 +1,4 @@
-##run_analysis.R Code Book - Getting and Cleaning Data Course Project
-
-The main train and test data files contain the full set of measures of the subjects and activity for 
-the Samsung phone accelrometer and gyroscope human activity recognition project referenced in full detail below.
-In summary, 30 subjects were given Samsung phones outfitted with accelerometers and gyroscopes that took various
-measurements while they performed 6 activities of walking, sitting, standing, walking upstairs, walking downstairs and 
-laying down.  The details of the experiment are detailed thoroughly here, 
-http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
-and in the readme.txt file included in the data files.  The contents of this file have been included at the bottom of 
-this code book, which describes each step of the work done with the downloaded data in the run_analysis.R script.
-
-A video of the experiment is also included here: http://www.youtube.com/watch?v=XOEN9W05_4A
-
-The files can be downloaded from: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
-and placed in the local R working directory.  Only the x_test, x_train, y_test, y_train, features, activity_labels,
-subject_train and subject_test files are loaded into R.  The files contained in the Inertial folders were determined
-to be surplus to the requirements of the assignment.
-
-The dplyr package is required for data manipulation througout the script.
-1) Load lookup values for activities from activity_labels.txt          
-
-"activity" "activity_labels"
-1 "WALKING"
-2 "WALKING_UPSTAIRS"
-3 "WALKING_DOWNSTAIRS"
-4 "SITTING"
-5 "STANDING"
-6 "LAYING"
-
-2) The column names in activity_labels are renamed to activity and activity_labels. 
-
-3) The features variables are loaded in from features.txt.  These are equivalent to the 561 columns in both 
-x_train and x_test and will be joined to those tables to provide descriptive labels. The values are:
-
-##run_analysis.R Code Book - Getting and Cleaning Data Course Project
+#run_analysis.R Code Book - Getting and Cleaning Data Course Project
 
 The main train and test data files contain the full set of measures of the subjects and activity for 
 the Samsung phone accelrometer and gyroscope human activity recognition project referenced in full detail below.
